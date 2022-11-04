@@ -1,0 +1,22 @@
+.logo-first,
+.logo-footer {
+    color: var(--accent-color);
+    font-family: Raleway, serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.logo-second {
+    color: #000;
+}
+
+.logo-footer {
+    color: var(--button-text);
+}
+
+
+.logo-first,
+.logo-footer {
+    display: inline-block;
+}
