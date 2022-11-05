@@ -1,3 +1,27 @@
+
+.sns-header {
+    display: flex;
+}
+
+.sns-header__item {
+    display: inline-block;
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 0 10px;
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        border: none;
+    }
+}
+
 .our-team__sns-list {
     display: flex;
     justify-content: center;

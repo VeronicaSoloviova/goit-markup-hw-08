@@ -16,7 +16,12 @@
     <header class="page-header">
         <div class="container page-header__container">
         <a href="/" class="logo-first page-header__logo-first">Web<span class="logo-second page-header__logo-second">Studio</span></a>
-        <nav class="nav">        
+        <button type="button" class="menu-btn" data-menu-open>
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu" class="menu-btn__icon-menu"></use>
+            </svg>
+        </button>
+        <nav class="nav">  
             <ul class="list-nav">
                 <li><a href="./index.html" class="list-nav__link_current">Студія</a></li>
                 <li><a href="./portfolio.html" class="list-nav__link">Портфоліо</a></li>
@@ -38,16 +43,45 @@
             </li>
         </ul>
         </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="menu-close-btn" data-menu-close>
+                    <svg width="40" height="40" aria-labelledby="mobile-menu">
+                        <use href="./images/icons.svg#icon-close-menu" class="menu-close-btn__icon-close-menu"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__list-nav">
+                    <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link_current">Студія</a></li>
+                    <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+                </ul>
+                <ul class="mobile-menu__contacts">
+                    <li class="mobile-menu__contacts-item">
+                        <a href="telto:+380961111111" class="mobile-menu__phone-link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a href="mailto:info@devstudio.com" class="mobile-menu__mail-link">info@devstudio.com</a>
+                    </li>
+                    
+                </ul>
+                <ul class="sns-header">
+                    <li class="sns-header__item"><a href="" class="sns-header__link"></a>Instagram</li>
+                    <li class="sns-header__item"><a href="" class="sns-header__link"></a>Twitter</li>
+                    <li class="sns-header__item"><a href="" class="sns-header__link"></a>Facebook</li>
+                    <li class="sns-header__item"><a href="" class="sns-header__link"></a>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
-        <!--Герой-->
+        <!--Герой--
         <section class="hero">
             <div class="container">
             <h1 class="hero__title">Ефективні рішення для <br> вашого бізнесу</h1>
             <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-        <!---Переваги-->
+        <!---Переваги--
         <section class="section">
             <div class="container">
             <h2 class="visually-hidden" hidden>Переваги</h2>
@@ -91,7 +125,7 @@
             </ul>
             </div>
         </section>
-        <!--Чим займаємося-->
+        <!--Чим займаємося--
         <section class="section-what-we-do">
             <div class="container">
             <h2 class="section-what-we-do__title">Чим ми займаємося</h2>
@@ -117,7 +151,7 @@
             </ul>
             </div>
         </section>
-        <!--Наша команда-->
+        <!--Наша команда--
         <section class="section section-team">
             <div class="container">
             <h2 class="section-team__title">Наша команда</h2>
@@ -273,7 +307,7 @@
             </ul>
             </div>
         </section>
-        <!--Постійні клієнти-->
+        <!--Постійні клієнти--
         <section class="section">
             <div class="container">
                 <h2 class="customers">Постійні клієнти</h2>
@@ -323,7 +357,7 @@
                 </ul>
             </div>
         </section>
-    </main>
+    </main>--
     <footer class="footer">
         <div class="container footer-container">
         <div>
@@ -386,7 +420,7 @@
         </div>
         
     </footer>
-    <!--Modal window-->
+    <!--Modal window--
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button class="modal-window__button-close" data-modal-close>
@@ -437,7 +471,8 @@
                 <button type="submit" class="modal-window__btn-send">Відправити</button>
             </form>
         </div>
-    </div>
+    </div>-->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
