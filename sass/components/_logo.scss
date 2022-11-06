@@ -20,3 +20,9 @@
 .logo-footer {
     display: inline-block;
 }
+
+.footer {
+    & .logo-first {
+    margin-bottom: 20px;
+}
+}

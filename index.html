@@ -125,39 +125,50 @@
             </ul>
             </div>
         </section>
-        <!--Чим займаємося--
+        <!--Чим займаємося-->
         <section class="section-what-we-do">
             <div class="container">
             <h2 class="section-what-we-do__title">Чим ми займаємося</h2>
             <ul class="what-we-do">
                 <li>
                     <div class="what-we-do__thumb">
-                    <img src="./images/box1.jpg" alt="Створення сайту" width="370">
+                    <img 
+                    srcset="./images/box1@2x.jpg 2x"
+                    src="./images/box1.jpg" alt="Створення сайту" width="370">
                     <p class="what-we-do__description">Десктопні додатки</p>
                     </div>
                 </li>
                 <li>
                     <div class="what-we-do__thumb">
-                    <img src="./images/box2.jpg" alt="Оптимізація" width="370">
+                    <img 
+                    srcset="./images/box2@2x.jpg 2x"
+                    src="./images/box2.jpg" alt="Оптимізація" width="370">
                     <p class="what-we-do__description">Мобільні додатки</p>
                     </div>
                 </li>
                 <li>
                     <div class="what-we-do__thumb">
-                    <img src="./images/box3.jpg" alt="Стилізація" width="370">
+                    <img 
+                    srcset="./images/box3@2x.jpg 2x"
+                    src="./images/box3.jpg" alt="Стилізація" width="370">
                     <p class="what-we-do__description">Дизайнерські рішення</p>
                     </div>
                 </li>
             </ul>
             </div>
         </section>
-        <!--Наша команда--
+        <!--Наша команда-->
         <section class="section section-team">
             <div class="container">
             <h2 class="section-team__title">Наша команда</h2>
             <ul class="our-team">
                 <li class="our-team__worker">
-                    <img class="our-team__photos" src="./images/img.jpg" alt="Ігор" width="270">
+                    <picture>
+                        <source srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/img-tablet.jpg 1x, ./images/img-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/img-mobile.jpg 1x, ./images/img-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="our-team__photos" src="./images/img.jpg" alt="Ігор">
+                    </picture>                    
                     <div class="our-team__info">
                     <h3 class="our-team__names">Ігор Дем'яненко</h3>
                     <p lang="en" class="our-team__positions">Product Designer</p>
@@ -194,7 +205,12 @@
                     </div>
                 </li>
                 <li class="our-team__worker">
-                    <img class="our-team__photos" src="./images/img1.jpg" alt="Ольга" width="270">
+                    <picture>
+                        <source srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/img1-tablet.jpg 1x, ./images/img1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/img1-mobile.jpg 1x, ./images/img1-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="our-team__photos" src="./images/img1.jpg" alt="Ольга">
+                    </picture>
                     <div class="our-team__info">
                     <h3 class="our-team__names">Ольга Рєпіна</h3>
                     <p lang="en" class="our-team__positions">Frontend Developer</p>
@@ -231,7 +247,12 @@
                     </div>
                 </li>
                 <li class="our-team__worker">
-                    <img class="our-team__photos" src="./images/img2.jpg" alt="Микола" width="270">
+                    <picture>
+                        <source srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/img2-tablet.jpg 1x, ./images/img2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/img2-mobile.jpg 1x, ./images/img2-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="our-team__photos" src="./images/img2.jpg" alt="Микола">
+                    </picture>
                     <div class="our-team__info">
                     <h3 class="our-team__names">Микола Тарасов</h3>
                     <p lang="en" class="our-team__positions">Marketing</p>
@@ -268,7 +289,12 @@
                     </div>
                 </li>
                 <li class="our-team__worker">
-                    <img class="our-team__photos" src="./images/img3.jpg" alt="Михайло" width="270">
+                    <picture>
+                        <source srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/img3-tablet.jpg 1x, ./images/img3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/img3-mobile.jpg 1x, ./images/img3-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="our-team__photos" src="./images/img3.jpg" alt="Михайло">
+                    </picture>
                     <div class="our-team__info">
                     <h3 class="our-team__names">Михайло Єрмаков</h3>
                     <p lang="en" class="our-team__positions">UI Designer</p>
@@ -307,7 +333,7 @@
             </ul>
             </div>
         </section>
-        <!--Постійні клієнти--
+        <!--Постійні клієнти-->
         <section class="section">
             <div class="container">
                 <h2 class="customers">Постійні клієнти</h2>
@@ -357,10 +383,10 @@
                 </ul>
             </div>
         </section>
-    </main>--
+    </main>
     <footer class="footer">
         <div class="container footer-container">
-        <div>
+        <div class="footer-container__thumb">
         <a href="/" class="logo-first">Web<span class="logo-footer">Studio</span></a>
         <address>
             <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
@@ -418,7 +444,6 @@
             </label>
         </form>
         </div>
-        
     </footer>
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>

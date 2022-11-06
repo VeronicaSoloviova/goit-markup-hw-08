@@ -15,29 +15,62 @@
 <body>
     <header class="page-header">
         <div class="container page-header__container">
-            <a href="/" class="logo-first page-header__logo-first">Web<span
-                    class="logo-second page-header__logo-second">Studio</span></a>
-            <nav class="nav">
-                <ul class="list-nav">
-                    <li><a href="./index.html" class="list-nav__link">Студія</a></li>
-                    <li><a href="./portfolio.html" class="list-nav__link_current">Портфоліо</a></li>
-                    <li><a href="" class="list-nav__link">Контакти</a></li>
-                </ul>
-            </nav>
-            <ul class="page-header__contacts">
-                <li class="page-header__contacts-item">
-                    <a href="mailto:info@devstudio.com" class="page-header__contacts-link">
-                        <svg class="page-header__contacts-icon" width="16px" height="12px">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com</a>
-                </li>
-                <li class="page-header__contacts-item">
-                    <a href="telto:+380961111111" class="page-header__contacts-link">
-                        <svg class="page-header__contacts-icon" width="10px" height="16px">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>+38 096 111 11 11</a>
-                </li>
+        <a href="/" class="logo-first page-header__logo-first">Web<span class="logo-second page-header__logo-second">Studio</span></a>
+        <button type="button" class="menu-btn" data-menu-open>
+            <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu" class="menu-btn__icon-menu"></use>
+            </svg>
+        </button>
+        <nav class="nav">  
+            <ul class="list-nav">
+                <li><a href="./index.html" class="list-nav__link">Студія</a></li>
+                <li><a href="./portfolio.html" class="list-nav__link_current">Портфоліо</a></li>
+                <li><a href="" class="list-nav__link">Контакти</a></li>
             </ul>
+        </nav>
+            <ul class="page-header__contacts">
+            <li class="page-header__contacts-item">
+                <a href="mailto:info@devstudio.com" class="page-header__contacts-link">
+                    <svg class="page-header__contacts-icon" width="16px" height="12px">
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+            <li class="page-header__contacts-item">
+                <a href="telto:+380961111111" class="page-header__contacts-link">
+                    <svg class="page-header__contacts-icon" width="10px" height="16px">
+                    <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
+        </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="menu-close-btn" data-menu-close>
+                    <svg width="40" height="40" aria-labelledby="mobile-menu">
+                        <use href="./images/icons.svg#icon-close-menu" class="menu-close-btn__icon-close-menu"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__list-nav">
+                    <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link_current">Студія</a></li>
+                    <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+                    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+                </ul>
+                <ul class="mobile-menu__contacts">
+                    <li class="mobile-menu__contacts-item">
+                        <a href="telto:+380961111111" class="mobile-menu__phone-link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-menu__contacts-item">
+                        <a href="mailto:info@devstudio.com" class="mobile-menu__mail-link">info@devstudio.com</a>
+                    </li>
+                    
+                </ul>
+                <ul class="sns-header">
+                    <li class="sns-header__item"><a href="" class="sns-header__link"></a>Instagram</li>
+                    <li class="sns-header__item"><a href="" class="sns-header__link"></a>Twitter</li>
+                    <li class="sns-header__item"><a href="" class="sns-header__link"></a>Facebook</li>
+                    <li class="sns-header__item"><a href="" class="sns-header__link"></a>LinkedIn</li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -177,7 +210,7 @@
     </main>
     <footer class="footer">
         <div class="container footer-container">
-            <div>
+            <div class="footer-container__thumb">
                 <a href="/" class="logo-first">Web<span class="logo-footer">Studio</span></a>
                 <address>
                     <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
@@ -237,7 +270,6 @@
                 </label>
             </form>
         </div>
-    
     </footer>
 </body>
 </html>

@@ -1,4 +1,15 @@
+//mobile
+@media screen and (min-width: 480px) {
+    .section-what-we-do {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1200px) {
 .section-what-we-do {
+    display: block;
     padding-bottom: 94px;
 }
 
@@ -37,4 +48,5 @@
     text-transform: uppercase;
     letter-spacing: 0.03em;
     font-family: inherit;
+}
 }
