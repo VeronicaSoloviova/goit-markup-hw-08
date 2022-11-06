@@ -1,3 +1,16 @@
+@media screen and (min-width:480px) {
+    .hero__title {
+        color: var(--button-text);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width:1200px) {
 .hero__title {
     color: var(--button-text);
     font-weight: 900;
@@ -6,4 +19,5 @@
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 30px;
+}
 }
