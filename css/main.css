@@ -149,6 +149,9 @@ a {
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .menu-close-btn {
     position: absolute;
@@ -167,7 +170,7 @@ a {
     display: flex;
     flex-direction: column;
     row-gap: 32px;
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
   .mobile-menu__item {
     display: block;
@@ -317,28 +320,31 @@ a {
 
 .sns-header__item {
   display: inline-block;
+  position: relative;
   color: var(--accent-color);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding: 0 10px;
+  margin-right: 20px;
 }
-.sns-header__item:first-child {
-  padding-left: 0;
+.sns-header__item::after {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  right: -10px;
+  height: 100%;
+  background: rgba(33, 33, 33, 0.2);
 }
-.sns-header__item:last-child {
-  border: none;
+.sns-header__item:last-child::after {
+  width: 0;
 }
-
-.our-team__sns-list {
+.sns-header__item .our-team__sns-list {
   display: flex;
   justify-content: center;
   column-gap: 10px;
 }
-
-.our-team__sns-link {
+.sns-header__item .our-team__sns-link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -348,28 +354,25 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-team__sns-link:hover, .our-team__sns-link:focus {
+.sns-header__item .our-team__sns-link:hover, .sns-header__item .our-team__sns-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
-
-.our-team__sns-icon {
+.sns-header__item .our-team__sns-icon {
   fill: var(--icon-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-team__sns-link:hover .our-team__sns-icon, .our-team__sns-link:focus .our-team__sns-icon {
+.our-team__sns-link:hover .sns-header__item .our-team__sns-icon, .our-team__sns-link:focus .sns-header__item .our-team__sns-icon {
   fill: var(--button-text);
   cursor: pointer;
 }
-
-.join__sns-list {
+.sns-header__item .join__sns-list {
   display: flex;
   column-gap: 10px;
 }
-
-.join__sns-link {
+.sns-header__item .join__sns-link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -382,7 +385,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.join__sns-link:hover, .join__sns-link:focus {
+.sns-header__item .join__sns-link:hover, .sns-header__item .join__sns-link:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
 }
@@ -1535,7 +1538,7 @@ a {
     margin-bottom: 20px;
   }
   .footer__subscribe {
-    margin-left: 70px;
+    margin-left: auto;
   }
   .footer__subscribe-title {
     display: block;

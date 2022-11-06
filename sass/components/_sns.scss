@@ -5,22 +5,27 @@
 
 .sns-header__item {
     display: inline-block;
+    position: relative;
     color: var(--accent-color);
     font-weight: 500;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding: 0 10px;
+    margin-right: 20px;
 
-    &:first-child {
-        padding-left: 0;
-    }
-
-    &:last-child {
-        border: none;
-    }
+    &::after {
+            content: ' ';
+            position: absolute;
+            width: 1px;
+            right: -10px;       
+            height: 100%;
+            background: rgba(33, 33, 33, 0.2);
+        }
+    
+        &:last-child::after {
+            width: 0;
 }
+
 
 .our-team__sns-list {
     display: flex;
@@ -83,4 +88,4 @@
             border-radius: 50%;
         }
 }
-
+}
